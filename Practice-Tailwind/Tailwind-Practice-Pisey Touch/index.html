@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vite-project</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-yellow-50">
+  <nav class="nav bg-white text-black flex justify-between py-4">
+    <h1 class="nav-left font-bold mx-16 text-3xl font-serif justify-center">Lead Page</h1>
+    <div class="nav-right flex gap-6 mx-16 items-center">
+      <a href="" class="text-black-500">Home</a>
+      <a href="" class="text-black-500">About</a>
+      <a href="" class="text-black-500">Blog</a>
+      <a href="" class="text-black-500">Contact</a>
+      <button class="text-white font-bold bg-black px-5 py-3 hover:bg-gray-800 transition">Get Started</button>
+    </div>
+  </nav>
+  <section class="bg-black min-h-screen mx-auto max-w-7xl w-full px-4 sm:px-8 py-12 md:py-24 flex items-start">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 mx-10 w-full">
+
+      <!-- Left Column: Content -->
+      <div class="space-y-6 pt-20">
+        <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-white leading-tight">
+          A dedicated team to grow your company
+        </h1>
+        <p class="text-gray-300 text-base sm:text-lg font-light leading-relaxed">
+          Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque
+          ultrices.
+        </p>
+
+        <!-- Feature List -->
+        <div class="space-y-4 pt-2">
+          <div class="flex items-center gap-3">
+            <div class="w-7 h-7 rounded-full bg-[#543EE0] flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <span class="text-white font-medium text-sm sm:text-base">Enim nunc faucibus a pellentesque sit amet.</span>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div class="w-7 h-7 rounded-full bg-[#543EE0] flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <span class="text-white font-medium text-sm sm:text-base">Dolor sit amet consectetur adipisci.</span>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div class="w-7 h-7 rounded-full bg-[#543EE0] flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <span class="text-white font-medium text-sm sm:text-base">Sed lectus vestibulum mattis ullamcorper
+              dolor.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Form Card with Adjustable Input Heights -->
+      <form class="bg-white text-gray-900 p-10 sm:p-14 rounded-[36px] shadow-2xl space-y-16">
+
+        <!-- Row 1: First Name & Last Name -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+          <div class="space-y-1.5">
+            <label for="fname" class="block text-1lg font-bold text-gray-800">First name</label>
+            <input type="text" id="fname" placeholder="First name"
+              class="w-full rounded-full border border-gray-100 bg-white px-6 py-6 text-sm text-gray-600 shadow-sm focus:outline-none focus:ring-2 focus:ring-[blue]">
+          </div>
+          <div class="space-y-1.5">
+            <label for="lname" class="block text-1lg font-bold text-gray-800">Last name</label>
+            <input type="text" id="lname" placeholder="Last name"
+              class="w-full rounded-full border border-gray-100 bg-white px-6 py-6 text-sm text-gray-600 shadow-sm focus:outline-none focus:ring-2 focus:ring-[blue]">
+          </div>
+        </div>
+
+        <!-- Row 2: Email & Phone -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+          <div class="space-y-1.5">
+            <label for="email" class="block text-1lg font-bold text-gray-800">Email</label>
+            <input type="email" id="email" placeholder="example@" autocomplete="off"
+              class="w-full rounded-full border border-gray-100 bg-white px-6 py-6 text-sm text-gray-600 shadow-sm focus:outline-none focus:ring-2 focus:ring-[blue]">
+          </div>
+          <div class="space-y-1.5">
+            <label for="phone" class="block text-1lg font-bold text-gray-800">Phone</label>
+            <input type="tel" id="phone" placeholder="(414) 804"
+              class="w-full rounded-full border border-gray-100 bg-white px-6 py-6 text-sm text-gray-600 shadow-sm focus:outline-none focus:ring-2 focus:ring-[blue]">
+          </div>
+        </div>
+
+        <!-- Row 3: Company & Role -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+          <div class="space-y-1.5">
+            <label for="company" class="block text-1lg font-bold text-gray-800">Company</label>
+            <input type="text" id="company" placeholder="Company"
+              class="w-full rounded-full border border-gray-100 bg-white px-6 py-6 text-sm text-gray-600 shadow-sm focus:outline-none focus:ring-2 focus:ring-[blue]">
+          </div>
+          <div class="space-y-1.5">
+            <label for="role" class="block text-1lg font-bold text-gray-800">Role</label>
+            <input type="text" id="role" placeholder="Role"
+              class="w-full rounded-full border border-gray-100 bg-white px-6 py-6 text-sm text-gray-600 shadow-sm focus:outline-none focus:ring-2 focus:ring-[blue]">
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit"
+          class="w-full bg-[#FF0055] hover:bg-black text-white font-bold py-5 rounded-full transition duration-200 text-base shadow-lg shadow-pink-500/20 ">
+          Get started
+        </button>
+
+      </form>
+
+    </div>
+  </section>
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <!-- Title -->
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-slate-800 max-w-2xl mx-auto mb-16 leading-tight">
+        Trusted by smart people in more than 140 countries
+      </h2>
+
+      <!-- Grid Layout -->
+      <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-200 items-stretch">
+
+        <!-- Card 1 -->
+        <div class="flex flex-col justify-between md:px-8 ">
+          <p class="text-gray-500 text-sm md:text-base leading-relaxed mb-6">
+            "The ability to completely customize the data fields and workflow has been tried by many others but this is
+            the first one that is the best sales tracking software that's so easy to customize as we go!"
+          </p>
+          <div class="space-y-3">
+            <div>
+              <div class="font-bold text-slate-700 text-base">Master Yoda</div>
+              <div class="text-gray-400 text-sm font-normal">COO & Grand Master</div>
+            </div>
+            <div>
+              <img
+                src="https://uploads-ssl.webflow.com/6516bc940db8f4a1d243e56a/6516bc940db8f4a1d243e584_Group%20851.png"
+                alt="Adobe Logo" class="h-6 object-contain">
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flex flex-col justify-between md:px-8">
+          <p class="text-gray-500 text-sm md:text-base leading-relaxed mb-6">
+            "The ability to completely customize the data software that's so easy to customize as we go!"
+          </p>
+          <div class="space-y-3">
+            <div>
+              <div class="font-bold text-slate-700 text-base">Master Yoda</div>
+              <div class="text-gray-400 text-sm font-normal">COO & Grand Master</div>
+            </div>
+            <div>
+              <img
+                src="https://uploads-ssl.webflow.com/6516bc940db8f4a1d243e56a/6516bc940db8f4a1d243e586_Group%20857.png"
+                alt="Atlassian Logo" class="h-6 object-contain">
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flex flex-col justify-between md:px-8">
+          <p class="text-gray-500 text-sm md:text-base leading-relaxed mb-6">
+            "The ability to completely customize the data fields and workflow has been tried by many others but this is
+            the first one that is the best sales"
+          </p>
+          <div class="space-y-3">
+            <div>
+              <div class="font-bold text-slate-700 text-base">Master Yoda</div>
+              <div class="text-gray-400 text-sm font-normal">COO & Grand Master</div>
+            </div>
+            <div>
+              <img
+                src="https://uploads-ssl.webflow.com/6516bc940db8f4a1d243e56a/6516bc940db8f4a1d243e585_Group%20862.png"
+                alt="Upwork Logo" class="h-6 object-contain">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl px-6 grid grid-cols-1 md:grid-cols-3 gap-8 mx-16">
+
+      <!-- Card 1 -->
+      <div class="space-y-4">
+        <div class="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center">
+          <img
+            src="https://uploads-ssl.webflow.com/6516bc940db8f4a1d243e56a/6516bc940db8f4a1d243e574_icon-brix-template-Mobile.svg"
+            alt="Mobile App" class="w-8 h-8">
+        </div>
+        <h3 class="text-xl font-bold text-slate-900">Mobile app</h3>
+        <p class="text-slate-500 text-sm leading-relaxed max-w-xs">
+          Lorem ipsum dolor sit amet consecte turole adipiscing elit semper dalaracc lacus velolte facilisis volutpat
+          est velitolm.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="space-y-4">
+        <div class="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center">
+          <img
+            src="https://uploads-ssl.webflow.com/6516bc940db8f4a1d243e56a/6516bc940db8f4a1d243e576_icon-brix-template-Desktop.svg"
+            alt="Desktop App" class="w-8 h-8">
+        </div>
+        <h3 class="text-xl font-bold text-slate-900">Desktop app</h3>
+        <p class="text-slate-500 text-sm leading-relaxed max-w-xs">
+          Lorem ipsum dolor sit amet consecte turole adipiscing elit semper dalaracc lacus velolte facilisis volutpat
+          est velitolm.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="space-y-4">
+        <div class="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center">
+          <img
+            src="https://uploads-ssl.webflow.com/6516bc940db8f4a1d243e56a/6516bc940db8f4a1d243e577_icon-brix-template-Users.svg"
+            alt="Multiple Users" class="w-8 h-8">
+        </div>
+        <h3 class="text-xl font-bold text-slate-900">Multiple users</h3>
+        <p class="text-slate-500 text-sm leading-relaxed max-w-xs">
+          Lorem ipsum dolor sit amet consecte turole adipiscing elit semper dalaracc lacus velolte facilisis volutpat
+          est velitolm.
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+      <!-- Hero Text -->
+      <div class="space-y-6">
+        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+          A dedicated team to grow your company
+        </h1>
+        <p class="text-slate-500 text-base md:text-lg leading-relaxed max-w-lg">
+          Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque
+          ultrices.
+        </p>
+
+        <!-- Buttons -->
+        <div class="flex items-center gap-4 pt-2">
+          <button type="button"
+            class="bg-[#ff004f] hover:bg-[#e00045] text-white font-medium px-8 py-3.5 rounded-md transition-colors">
+            Get started
+          </button>
+          <button type="button"
+            class="border border-slate-900 text-slate-900 hover:bg-black hover:text-white font-medium px-8 py-3.5 rounded-full transition-colors">
+            Talk to sales
+          </button>
+        </div>
+      </div>
+
+      <!-- Hero Image -->
+      <div class="flex justify-center md:justify-end">
+        <img
+          src="https://uploads-ssl.webflow.com/6516bc940db8f4a1d243e56a/6516bc940db8f4a1d243e57d_7f9aa1de77efa7d3daa30c01f6cef28f.jpg"
+          alt="Hero Illustration" class="w-full max-w-md md:max-w-lg object-contain">
+      </div>
+
+    </div>
+  </section>
+  <section class="bg-white text-center">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <!-- Header -->
+      <span class="text-[#ff004f] text-xs font-bold tracking-widest uppercase">OUR PROCESS</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">Get started as easy as 1, 2, 3</h2>
+      <p class="text-slate-500 text-sm md:text-base max-w-xl mx-auto mb-16 leading-relaxed">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu egestas morbi sem vulputate etiam facilisis
+        pellentesque ut quis.
+      </p>
+
+      <!-- Steps Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+
+        <!-- Step 1 -->
+        <div class="flex flex-col items-center text-center space-y-4">
+          <div class="w-32 h-32 md:w-36 md:h-36 bg-pink-50 rounded-full flex items-center justify-center">
+            <span class="text-[#ff004f] text-4xl md:text-5xl font-bold">1</span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 pt-2">Download our free app</h3>
+          <p class="text-slate-500 text-sm leading-relaxed max-w-xs">
+            Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar consectetur elementum tempus hac.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex flex-col items-center text-center space-y-4">
+          <div class="w-32 h-32 md:w-36 md:h-36 bg-pink-50 rounded-full flex items-center justify-center">
+            <span class="text-[#ff004f] text-4xl md:text-5xl font-bold">2</span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 pt-2">Create an account</h3>
+          <p class="text-slate-500 text-sm leading-relaxed max-w-xs">
+            Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar consectetur elementum tempus hac.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex flex-col items-center text-center space-y-4">
+          <div class="w-32 h-32 md:w-36 md:h-36 bg-pink-50 rounded-full flex items-center justify-center">
+            <span class="text-[#ff004f] text-4xl md:text-5xl font-bold">3</span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 pt-2">Enjoy our app</h3>
+          <p class="text-slate-500 text-sm leading-relaxed max-w-xs">
+            Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar consectetur elementum tempus hac.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="py-16 md:py-24 bg-white text-center">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <!-- Header -->
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Browse our set of features</h2>
+      <p class="text-slate-500 text-sm md:text-base max-w-xl mx-auto mb-16 leading-relaxed">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan.
+      </p>
+
+      <!-- 2x2 Grid Layout -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+
+        <!-- Card 1 -->
+        <div
+          class="flex items-start gap-5 p-8 bg-white border border-gray-100 rounded-3xl shadow-[0_4px_25px_rgba(0,0,0,0.03)]">
+          <div class="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center shrink-0">
+            <img
+              src="https://uploads-ssl.webflow.com/651046c4da09d5986bb5611c/651046c5da09d5986bb561e3_icon-brix-template-Mobile.svg"
+              alt="Mobile app" class="w-8 h-8">
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Mobile app</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">
+              Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar cons elementum tempus hac.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="flex items-start gap-5 p-8 bg-white border border-gray-100 rounded-3xl shadow-[0_4px_25px_rgba(0,0,0,0.03)]">
+          <div class="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center shrink-0">
+            <img
+              src="https://uploads-ssl.webflow.com/651046c4da09d5986bb5611c/651046c5da09d5986bb561d5_icon-brix-template-Desktop.svg"
+              alt="Desktop app" class="w-8 h-8">
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Desktop app</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">
+              Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar cons elementum tempus hac.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="flex items-start gap-5 p-8 bg-white border border-gray-100 rounded-3xl shadow-[0_4px_25px_rgba(0,0,0,0.03)]">
+          <div class="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center shrink-0">
+            <img
+              src="https://uploads-ssl.webflow.com/651046c4da09d5986bb5611c/651046c5da09d5986bb561ec_icon-brix-template-Users.svg"
+              alt="Multiple users" class="w-8 h-8">
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Multiple users</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">
+              Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar cons elementum tempus hac.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="flex items-start gap-5 p-8 bg-white border border-gray-100 rounded-3xl shadow-[0_4px_25px_rgba(0,0,0,0.03)]">
+          <div class="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center shrink-0">
+            <img
+              src="https://uploads-ssl.webflow.com/6516bc940db8f4a1d243e56a/6516c7ecab329bb0ec2f7206_icon-brix-template-Gear.svg"
+              alt="Integrations" class="w-8 h-8">
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Integrations</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">
+              Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar cons elementum tempus hac.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <br>
+  <section class="bg-black py-16 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- Item 1 -->
+      <div class="bg-white rounded-2xl p-6 md:p-8 flex flex-col justify-between space-y-4">
+        <div class="flex items-start justify-between gap-4">
+          <h3 class="text-xl font-bold text-slate-900 leading-snug">Why is Webflow the best nocode tool?</h3>
+          <button
+            class="w-10 h-10 bg-slate-100 text-slate-600 rounded-xl flex items-center justify-center text-xl font-medium shrink-0 hover:bg-slate-200 transition-colors">+</button>
+        </div>
+        <p class="text-slate-500 text-sm leading-relaxed">
+          Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute
+          irure dolor
+        </p>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="bg-white rounded-2xl p-6 md:p-8 flex flex-col justify-between space-y-4">
+        <div class="flex items-start justify-between gap-4">
+          <h3 class="text-xl font-bold text-slate-900 leading-snug">How to launch a Webflow website?</h3>
+          <button
+            class="w-10 h-10 bg-slate-100 text-slate-600 rounded-xl flex items-center justify-center text-xl font-medium shrink-0 hover:bg-slate-200 transition-colors">+</button>
+        </div>
+        <p class="text-slate-500 text-sm leading-relaxed">
+          Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute
+          irure dolor
+        </p>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="bg-white rounded-2xl p-6 md:p-8 flex flex-col justify-between space-y-4">
+        <div class="flex items-start justify-between gap-4">
+          <h3 class="text-xl font-bold text-slate-900 leading-snug">When did Webflow was founded?</h3>
+          <button
+            class="w-10 h-10 bg-slate-100 text-slate-600 rounded-xl flex items-center justify-center text-xl font-medium shrink-0 hover:bg-slate-200 transition-colors">+</button>
+        </div>
+        <p class="text-slate-500 text-sm leading-relaxed">
+          Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute
+          irure dolor
+        </p>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="bg-white rounded-2xl p-6 md:p-8 flex flex-col justify-between space-y-4">
+        <div class="flex items-start justify-between gap-4">
+          <h3 class="text-xl font-bold text-slate-900 leading-snug">Who founded BRIX Templates?</h3>
+          <button
+            class="w-10 h-10 bg-slate-100 text-slate-600 rounded-xl flex items-center justify-center text-xl font-medium shrink-0 hover:bg-slate-200 transition-colors">+</button>
+        </div>
+        <p class="text-slate-500 text-sm leading-relaxed">
+          Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute
+          irure dolor
+        </p>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="bg-white rounded-2xl p-6 md:p-8 flex flex-col justify-between space-y-4">
+        <div class="flex items-start justify-between gap-4">
+          <h3 class="text-xl font-bold text-slate-900 leading-snug">Is NoCode the future of the web?</h3>
+          <button
+            class="w-10 h-10 bg-slate-100 text-slate-600 rounded-xl flex items-center justify-center text-xl font-medium shrink-0 hover:bg-slate-200 transition-colors">+</button>
+        </div>
+        <p class="text-slate-500 text-sm leading-relaxed">
+          Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute
+          irure dolor
+        </p>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="bg-white rounded-2xl p-6 md:p-8 flex flex-col justify-between space-y-4">
+        <div class="flex items-start justify-between gap-4">
+          <h3 class="text-xl font-bold text-slate-900 leading-snug">Who are the Webflow founders?</h3>
+          <button
+            class="w-10 h-10 bg-slate-100 text-slate-600 rounded-xl flex items-center justify-center text-xl font-medium shrink-0 hover:bg-slate-200 transition-colors">+</button>
+        </div>
+        <p class="text-slate-500 text-sm leading-relaxed">
+          Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute
+          irure dolor
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <footer class="bg-white py-12 px-6 font-sans text-slate-600">
+    <div class="max-w-6xl mx-auto space-y-6">
+
+      <!-- Navigation Columns (5 Columns Grid) -->
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-8">
+
+        <!-- Col 1 -->
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-slate-900 mb-6">INTEGRATIONS</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-slate-900 transition-colors">Pricing</a></li>
+            <li><a href="#" class="hover:text-slate-900 transition-colors">Integrations</a></li>
+            <li><a href="#" class="hover:text-slate-900 transition-colors">Affiliate Programs</a></li>
+            <li class="flex items-center gap-2">
+              <a href="#" class="hover:text-slate-900 transition-colors">Agency Partners</a>
+              <span class="bg-black text-white text-[10px] font-semibold px-2.5 py-0.5 rounded-full">New</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 2 -->
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-slate-900 mb-6">MARKETING</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-slate-900 transition-colors">Entrepreneur</a></li>
+            <li><a href="#" class="hover:text-slate-900 transition-colors">Online marketer</a></li>
+            <li><a href="#" class="hover:text-slate-900 transition-colors">Marketing manager</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-slate-900 mb-6">HEAD</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-slate-900 transition-colors">About</a></li>
+            <li><a href="#" class="hover:text-slate-900 transition-colors">Careers</a></li>
+            <li><a href="#" class="hover:text-slate-900 transition-colors">API Docs</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-slate-900 mb-6">SOLUTIONS</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-slate-900 transition-colors">Entrepreneur</a></li>
+            <li><a href="#" class="hover:text-slate-900 transition-colors">Online marketer</a></li>
+            <li><a href="#" class="hover:text-slate-900 transition-colors">Marketing manager</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5 -->
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-slate-900 mb-6">EDITORS</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-slate-900 transition-colors">Entrepreneur</a></li>
+            <li><a href="#" class="hover:text-slate-900 transition-colors">Online marketer</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Divider 1 -->
+      <hr class="border-gray-200">
+
+      <!-- Languages (Centered) -->
+      <div class="flex justify-center items-center gap-2 text-sm py-1">
+        <a href="#" class="underline font-medium text-slate-900">English</a>
+        <span class="text-xs text-slate-400">•</span>
+        <a href="#" class="hover:underline text-slate-600">Español</a>
+        <span class="text-xs text-slate-400">•</span>
+        <a href="#" class="hover:underline text-slate-600">Francais</a>
+      </div>
+
+      <!-- Divider 2 -->
+      <hr class="border-gray-200">
+
+      <!-- Bottom Links & Copyright -->
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm pt-1">
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-slate-900 transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-slate-900 transition-colors">Security Information</a>
+          <a href="#" class="hover:text-slate-900 transition-colors">Integrations</a>
+        </div>
+        <div class="text-slate-600 font-medium">
+          Copyright © 2022
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
