@@ -17,3 +17,10 @@ console.log("Hello, my name is " +
      student.name + " and I am " + student.age + 
      " years old. I am majoring in "
       + student.major + ".");
+
+    const students = [
+        { name: "Pisey", age: 20, major: "Computer Science" },
+        { name: "John", age: 22, major: "Mathematics" },
+        { name: "Jane", age: 19, major: "Physics" }
+    ];
+    console.log(students);
