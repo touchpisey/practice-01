@@ -24,3 +24,29 @@ console.log("Hello, my name is " +
         { name: "Jane", age: 19, major: "Physics" }
     ];
     console.log(students);
+
+      
+
+
+
+
+
+// const student = {
+//   name: "Chhea",
+//   age: 22,
+//   school: "University",
+//   major: "Software Engineering",
+//   country: "Cambodia",
+//   language: "JavaScript"
+// };
+
+// console.log("Student Information");
+// console.log("-------------------");
+// console.log("Name:", student.name);
+// console.log("Age:", student.age);
+// console.log("School:", student.school);
+// console.log("Major:", student.major);
+// console.log("Country:", student.country);
+// console.log("Learning:", student.language);
+
+
